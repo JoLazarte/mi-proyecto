@@ -1,5 +1,5 @@
 body {
-    margin: 10px;
+    padding:10px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -13,6 +13,10 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center; 
+    margin:1.5rem
+}
+.modal-title {
+    margin-left: 0.7rem;
 }
   
 .button-modal {
@@ -39,6 +43,11 @@ body {
 }
   
 .overlay {
+    /*display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -61,8 +70,8 @@ body {
 }
   
 .popup {
-    margin:8rem;
-    padding: 20px;
+    margin:10px;
+    padding: 18px;
     background: #fff;
     border: 1px solid #666;
     box-shadow: 0 0 50px rgba(0,0,0,0.5);
@@ -83,6 +92,6 @@ body {
     color: #666;
 }
 .close-m:hover {
-          opacity: 1;
+    opacity: 1;
 }
     

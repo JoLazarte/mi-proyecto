@@ -25,32 +25,97 @@
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <!-- Card inside Modal -->
-      <div class="major-card">
-        <div class="card text-dark bg-light mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Light card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- Card/orm inside Modal -->
+      <form class="major-card">
+        <div class="input-group mb-3">
+          <div class="form-floating two-input">
+            <!--<span class="input-group-text">First and last name</span>-->
+            <input type="text" class="form-control" id="floatingName" placeholder="First name" >
+            <label for="floatingName">First Name</label>
+          </div>  
+          <div class="form-floating two-input">
+            <input type="text" class="form-control" id="floatingLastName" placeholder="Last name" >
+            <label for="floatingLastName">Last Name</label>
           </div>
         </div>
-        <div class="card text-white bg-dark mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Dark card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="input-group mb-3">
+          <div class="form-floating full-width">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
+            <label for="floatingInput">Email address</label>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <img src="https://t2.uc.ltmcdn.com/es/posts/1/4/3/como_saber_si_mi_caniche_es_puro_49341_600.jpg" class="card-img-top" alt="caniche">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="input-group mb-3">
+          <div class="form-floating full-width">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
           </div>
         </div>
-      </div>
+        <div class="input-group mb-3">
+            <input type="url" class="form-control" placeholder="Your URL page: https://example.com" aria-describedby="basic-addon3">         
+            <button class="btn btn-outline-secondary " type="button">Go to the site</button>
+        </div>
+        
+        <div class="input-group mb-3">
+          <!--Puedo intercalar "label" con "select"-->
+          <!--<label class="input-group-text" for="inputGroupSelect01">Options</label>-->
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>        
+        <div class="input-group mb-3">
+          <!--Puedo intercalar "button" con "select"-->
+          <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <!--<button class="btn btn-outline-secondary" type="button">Button</button>-->
+        </div>
+        <div class="input-group mb-3">
+          <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+          <!--<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>-->
+        </div>
+        <div class="input-group mb-3">
+          <div class="form-floating full-width">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div>
+        <div class="input-group mb-3">
+          <input type="date" class="form-control" aria-label="Text input with date">
+        </div> 
+        <div class="input-group mb-3">
+          <input type="time" class="form-control" aria-label="Text input with time">
+        </div>
+        
+      </form>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
@@ -63,14 +128,101 @@
 <br>
   <p><a class="button-modal" href="#my-popup">Click Me</a></p>
 
-<div id="my-popup" class="overlay">
+<div id="my-popup" class="overlay" >
 	<a class="cancel" href="#"></a>
   <div class="popup">
 		<h2>Info box</h2>
 		<a class="close-m" href="#">&times;</a>
-		<div class="content">
-			<p>This is done totally without JavaScript. Just HTML and CSS. And yoy can also click outside the popup to close.</p>
-		</div>
+		<form class="major-card">
+      <div class="input-group mb-3">
+        <div class="form-floating two-input">
+          <!--<span class="input-group-text">First and last name</span>-->
+          <input type="text" class="form-control" id="floatingName" placeholder="First name" >
+          <label for="floatingName">First Name</label>
+        </div>  
+        <div class="form-floating two-input">
+          <input type="text" class="form-control" id="floatingLastName" placeholder="Last name" >
+          <label for="floatingLastName">Last Name</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating full-width">
+          <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
+          <label for="floatingInput">Email address</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating full-width">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+          <input type="url" class="form-control" placeholder="Your URL page: https://example.com" aria-describedby="basic-addon3">         
+          <button class="btn btn-outline-secondary " type="button">Go to the site</button>
+      </div>
+      
+      <div class="input-group mb-3">
+        <!--Puedo intercalar "label" con "select"-->
+        <!--<label class="input-group-text" for="inputGroupSelect01">Options</label>-->
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>        
+      <div class="input-group mb-3">
+        <!--Puedo intercalar "button" con "select"-->
+        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <!--<button class="btn btn-outline-secondary" type="button">Button</button>-->
+      </div>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <!--<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>-->
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating full-width">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+      <div class="input-group mb-3">
+        <input type="date" class="form-control" aria-label="Text input with date">
+      </div> 
+      <div class="input-group mb-3">
+        <input type="time" class="form-control" aria-label="Text input with time">
+      </div>
+      
+    </form>
 	</div>
 </div>
 

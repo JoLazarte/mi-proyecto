@@ -1,0 +1,162 @@
+html, body {
+    width: 100vw;
+    margin: 0;
+    background: rgb(129, 193, 223);
+    overflow-x: hidden;
+}
+.sui-major-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+    margin:1.5rem;
+}
+
+.sui-input-box {
+
+    justify-content: space-between;
+    margin-bottom: 1rem!important;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+
+}
+.sui-input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #71a4d6;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.sui-sticky-input {
+    width:-webkit-fill-available;
+    display: block;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #71a4d6;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+   
+.sui-fit{
+    padding: 0%;
+    margin: 0;
+    width: 50%;
+}
+
+.sui-label {
+    display: inline-block;
+    position: absolute;
+    margin:0.9rem; 
+    font-size: 1.08rem;
+    line-height: 1.2;
+    /*font-size: 15.8 px*/
+   
+}
+.sui-larger-input {
+    padding: 0%;
+    margin: 0;
+    width: 65%;
+}
+.sui-button {
+    padding: 0;
+    margin: 0;
+    width: 35%;
+    
+   
+}
+
+button {
+    width: -webkit-fill-available;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 0.3125rem;
+    background-color: #79a8db;
+    border: 2px solid #2773c0;
+    color:#111872;
+    appearance: none;
+    border-radius: 0.25rem;
+
+}
+button:hover, button:focus {
+    opacity: 0.9;
+    
+    color: rgb(12, 64, 104);
+    background-color: #abc3dd;
+    border: 3px solid #71a4d6;
+
+
+}
+.sui-check{
+    padding: 0.85rem;
+    position: relative;
+    background-color: #79a8db;
+    border: 1px solid #2773c0;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media (max-width:280px){ /*galaxy fold*/
+    .sui-larger-input {
+        width: 60%;
+    }
+    .sui-button {
+        width: 40%;   
+       
+    }
+    
+
+}
+
+@media (min-width:414px) {
+
+    .sui-larger-input {
+        width: 75%;
+    }
+    .sui-button {
+        width: 25%;   
+       
+    }
+   
+}
+
+
+@media (min-width:1200px){
+    
+    .sui-larger-input {
+      
+        width: 80%;
+    }
+    .sui-button {
+      
+        width: 20%;
+    }
+    button {
+        padding: 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+    
+    }
+
+}
